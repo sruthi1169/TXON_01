@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.bg-container {
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-setup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.nav-icon-container{
+    display:flex;
+   
+}
+.icon-container{
+    display:flex;
+    margin-top:0px;
+    
+}
+
+.nav-icon{
+    height:30px;
+    width:30px;
+    border-radius:5px;
+}
+
+.icon-name{
+    color:darkgreen;
+    margin-top:0px;
+}
+
+.cart-icon2{
+    display:none;
+}
+
+.icon{
+    margin-left: 10px;;
+}
+
+.icon2 {
+    display: none;
+}
+
+.cancel {
+    display: flex;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.item {
+    font-family: "open sans";
+    font-size:15px;
+    font-weight: bold;
+    color: green;
+    border-top: 2px solid #e7e5ea;
+    padding: 10px;
+    text-decoration: none;
+}
+
+button {
+    margin: 20px;
+    border-radius: 15px;
+    height: 40px;
+    width: 70px;
+    background-color: #ffdda9;
+}
+
+.list {
+    display: none;
+    justify-content: space-between;
+}
+
+.lists {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-container {
+    background-image: url("./images/bg2.jpg");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.heading {
+    font-family: "Roboto";
+    color: #ffffff;
+    font-size: 45px;
+    text-align: center;
+    max-width: 650px;
+    margin-bottom:0px;
+}
+
+.description{
+    font-family: "Roboto";
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    margin-top:0px;
+}
+
+.btn{
+    background-color: transparent;
+    font-family: "Roboto";
+    color: #ffffff;
+    font-size: 13px;
+    text-align: center;
+    padding:15px;
+    border-radius: 5px;
+    border:2px solid white;
+    margin-top:15px;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    width:100px;
+}
+
+
+  
+  .btn::before{
+    content: '';
+    position: absolute;
+    top:0; 
+    right: 0;
+    width:0%;
+    height:100%;
+    background:green;
+    transition: .3s linear;
+    z-index: -1;
+  }
+  
+  .btn:hover::before{
+    width:100%;
+    left: 0;
+    border-radius: 10px;
+    
+  }
+  
+  .btn:hover{
+    color:#fff;
+    border-width: 0px;
+    border-radius: 10px;
+  }
+
+@media (min-width:768px) {
+    .bottom-container {
+        background-image: url("./images/bg2.jpg");
+        height: 100vh;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .cart-icon1{
+        display:none;
+    }
+
+    .cart-icon2{
+        display:flex;
+        color:darkcyan;
+        margin-right:30px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+
+    .nav-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+
+    
+    .item {
+        font-family:sans-serif;
+        font-size:12px;
+        font-weight: bold;
+        border: none;
+        text-decoration: none;
+        color:darkcyan;
+    }
+
+    .item:hover{
+        text-decoration: underline;
+        color:green;
+        font-size:15px;
+        opacity: 0.5;
+    }
+
+
+    button {
+        border-width: 0px;
+    }
+
+}
